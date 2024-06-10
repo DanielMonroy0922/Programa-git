@@ -1,0 +1,25 @@
+/* Media query para dispositivos más pequeños */
+/* Permite que los elementos se envuelvan en múltiples líneas */
+/* Centra los elementos en la pantalla */
+@media only screen and (max-width: 700px) {
+    nav ol {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+/* Hace que cada elemento ocupe el 50% del ancho para que aparezcan en dos columnas */
+/* Centra el texto */
+/* Agrega separación entre las filas */
+    nav ol li {
+      width: 50%; 
+      text-align: center; 
+      margin: 10px 0; 
+    }
+}
+  
+/* Hace que cada elemento ocupe el 100% del ancho para que aparezcan en una sola columna */  
+@media only screen and (max-width: 500px) {
+    nav ol li {
+      width: 100%; 
+    }
+}
